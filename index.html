@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ERYXWORLD</title>
+<link rel="icon" href="images/favicon.png" />
+<link rel="stylesheet" href="design.css" type="text/css" />
+<link rel="stylesheet" href="fonts.css" type="text/css" />
+<link rel="stylesheet" href="animations.css" type="text/css" />
+<script>
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('clock').innerHTML=h+":"+m+":"+s;
+t=setTimeout(function(){startTime()},500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+
+<!---navigator-->
+<div id="nav">
+<a href="#">home</a> <a href="#">project</a> <a href="#">contact</a>
+</div>
+
+<!---page 1-->
+<div id="pg1">
+<p>welcome to the world <x title="blink">b</x></p>
+</div>
+
+<!---construction--->
+<div id="const">
+<img src="/images/eryxworld.png" />
+<br/>
+under construction...
+<div id="clock"></div>
+</div>
+
+<!---footer-->
+<span id="foot">D ` G</span>
+
+</body>
+
+</html>

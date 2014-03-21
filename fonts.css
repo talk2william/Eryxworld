@@ -1,0 +1,16 @@
+/*fonts*/
+
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  src:url(/fonts/LfMzj2MWAZU6qzlnp1MNbg.woff) format('woff');
+}
+
+
+@font-face {
+  font-family: 'SOCIAL';
+  font-style: normal;
+  font-weight: 400;
+  src:url(/fonts/social_font.ttf);
+}

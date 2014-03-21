@@ -1,0 +1,24 @@
+/*animation*/
+
+/*blink*/
+#pg1 p x {
+ color:white;
+ background-color:white;
+ font-size:25px;
+ -webkit-animation-name:myfade;
+ -webkit-animation-duration:1s;
+ -webkit-animation-iteration-count:infinite;
+ animation-name:myfade;
+ animation-duration:1s;
+ animation-iteration-count:infinite;
+}
+
+@-webkit-keyframes myfade {
+ from {opacity:1.1;}
+ to{opacity:0.0;}
+}
+
+@keyframes myfade {
+ from {opacity:1.1;}
+ to{opacity:0.0;}
+}
